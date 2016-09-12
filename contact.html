@@ -4,21 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Document</title>
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 
 <body>
+  <div id ="bloc_page">
+      <header>
+          <img src="images/logo_chateau_doms.png" class="img-responsive" alt="Château Doms" >
+      </header>
+
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                   </button>
+               </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html">Accueil</a></li>
+                      <li><a href="vins.html">Nos vins</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav>
+
+
   <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="thumbnail text-justify">
+            <div class="caption">
+      <p> <strong> Le Château Doms se situe à Portets à 25 kms au sud de Bordeaux, ville inscrite depuis 2007 à la liste du patrimoine mondial de l’UNESCO. </strong> </p>
+    </div>
+</div>
+</div>
+      <!--Article - contact -->
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="thumbnail text-justify">
+              <div class="caption">
+                  <h1>Nous contacter</h1>
+                  <p>SCE Vignobles Parage</br>
+                  Château Doms</br>
+                  10 route de Lagaceye</br>
+                  33640 Portets</br>
+                  Tél. : +33 (0)5 56 67 20 12</br>
+                  Fax : +33 (0)5 56 67 31 89</br>
+                  </br>
+                  Hélène Durand-Parage, Gérante</br>
+                  Amélie Durand, Œnologue</br>
+                  </br>
+                  chateau.doms@wanadoo.fr</br>
+                  www.chateau-doms.fr</p>
+              </div>
+          </div>
+      </div>
+
+      <!--Article - visite -->
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+          <div class="thumbnail text-justify">
+              <div class="caption">
+                <h1>Se rendre au Château Doms depuis Bordeaux</h1>
+                <p>Prendre l’autoroute A62 / E72 en direction de Toulouse</br>
+                Prendre la Sortie 1.1 La brède</br>
+                Continuer sur : D1113 sur 10 kms</br>
+                A la sortie de Portets, prendre à droite : Chemin Lagaceye</br>
+                Après 900 m, tourner à droite, arrivée au Château Doms</p>
+            </br>
+                <h1>Utilisation d’un GPS</h1>
+                <p>Coordonnées satellites : O : 0° 25’ 12’’ N : 44° 40’ 29’’</br>
+                Saisir : « Ville » : Portets et « Rue » : Doms ou 10 chemin Lagaceye</br></p>
+
+              </div>
+          </div>
+      </div>
+
+
+
+
+      <!--Article - formulaire -->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="thumbnail text-justify">
+              <div class="caption">
+<p> <strong> Si vous souhaitez recevoir nos tarifs ou pour tout autre renseignement, n’hésitez pas à nous écrire. </strong> </p>
+
       <div class="row">
-<p> Si vous souhaitez recevoir nos tarifs ou pour tout autre renseignement, n’hésitez pas à nous écrire. </p>
 </br>
-  <div class="civilite">Civilité :
+  <div class="civilite"> Civilité :
     <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> M.
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> M.
   </label>
 
       <label class="radio-inline">
@@ -41,9 +130,7 @@
           <label class="sr-only" for="surname">Prénom</label>
           <input type="surname" class="form-control" id="surname" placeholder="Prénom">
         </div>
-      </form>
-    </br>
-        <form>
+      </form>      <form>
     <div class="form-group">
       <label for="adresse mail">Adresse email</label>
       <input type="email" class="form-control" id="adresse mail" placeholder="Email">
@@ -52,7 +139,31 @@
     <textarea class="form-control" rows="3">Message</textarea>
   </br>
     </div>
-    <button type="submit" class="btn btn-primary">Envoyer</button>
+    <button type="submit" class="btn btn-default center-block">Envoyer</button>
   </form>
-</body>
-</html>
+</div>
+</div>
+</div>
+
+  <footer>
+      <img src="images/trait.png" class="img-responsive" >
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <div class="thumbnail text-justify">
+              <div class="caption">
+                <h1> Partenariats </h1>
+                <ul id="partenariats">
+                    <li><a href="#">La cité du vin</a></li>
+                    <li><a href="http://www.vinsdegraves.com/en/node/3">Vins des Graves</a></li>
+                    <li><a href="http://www.bordeaux.com/fr">Comité interprofessionnel des vins de Bordeaux (CIVB)</a></li>
+                    <li><a href="http://www.bordeaux-graves-sauternes.com/">Roue des vins de Bordeaux en Graves et Sauternes</a></li>
+                    <li><a href="http://tourisme-sud-gironde.com/z/index.php">Office de Tourisme Sauternes Graves Landes Girondines</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+
+  </footer>
+
+  </div><!-- /div bloc page -->
+  </body>
+  </html>
