@@ -29,9 +29,9 @@ body {
 }
 
 @media (min-width : 1200px) {
-  #bloc_page{
-    width: 1200px;
-    margin: auto;}
+    #bloc_page{
+        width: 1200px;
+        margin: auto;}
 }
 
 h1, a {
@@ -43,7 +43,7 @@ h1, a {
 /* Header Logo domaine */
 
 .img-responsive {
-  margin: auto;
+    margin: auto;
 }
 
 /* Barre de navigation */
@@ -51,6 +51,7 @@ h1, a {
 .navbar-default {
     background-color: RGB(236, 229, 214);
 }
+
 nav a {
     font-size: 1.2em;
     text-decoration: none;
@@ -65,12 +66,11 @@ nav a:hover {
 
 #carousel-example-generic {
     width : 1200px;
-    height : 400px;
     margin : auto;
     margin-bottom: 15px;
 }
 
-@media (max-width : 900px) {
+@media (max-width : 1200px) {
     #carousel-example-generic {
         width: 100%; } }
 
@@ -83,26 +83,58 @@ h1 {
 p {
     font-size: 1em;
     line-height: 1.4;
+    text-align: justify;
 }
 .text-justify {
     background-color: RGB(236, 229, 214);
     border : none;
 }
 
+.texte-vin-marge {
+  margin-right: 40px;
+}
+
+.marge-bloc-texte {
+  margin-top: 50px;
+}
+
+@media (max-width : 400px){
+  .left-block{
+    position: relative;
+    top: 50%;
+    transform: translateY(+60%);<br>}
+  }
+
 /* Style des forms */
 .radio-inline {
-  margin-left: 4%;
+    margin-left: 4%;
 }
 .form-group {
-  padding-top : 25px;
+    padding-top : 25px;
 }
 
 /* Style des boutons */
 
 .btn-default{
-background-color: #8d0051;
-color : white;
+    background-color: #8d0051;
+    color : white;
 }
+.btn-default:hover {
+  color :  #8d0051;
+}
+
+/* style de la carte page contact */
+
+iframe {
+    width: 600px;
+    height: 350px;
+    margin : auto;
+}
+@media (max-width : 1200px) {
+    iframe {
+      width : 90%;
+      height : auto;
+    }
 
 /* Footer */
 
