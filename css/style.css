@@ -82,6 +82,19 @@ h1 {
     font-size: 1.5em;
 }
 
+.slogan {
+  text-align: center;
+  font-style: italic;
+  color : #8d0051;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  border : solid 2px white ;
+  background-color: white;
+
+}
+@media (max-width: 400px) {
+    h1 { font-size: 1.2em;}}
+
 p {
     font-size: 1em;
     line-height: 1.4;
@@ -167,6 +180,6 @@ footer h1 {
 footer .btn-default {
     background-color: #8d0051;
     color: white;
-    margin-top: 0px;
+    margin-top: 40px;
     margin-left: 40%;
 }
